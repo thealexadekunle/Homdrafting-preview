@@ -38,16 +38,16 @@ Manrope is installed through Fontsource. The supplied Hōm logo is used unchange
 
 ## Before launch
 
-Confirm the experience figure, address, image rights, final brand mark, enquiry destination, and privacy copy. The preview is marked noindex. Set production metadata, canonical URL, and an approved social sharing image when the destination is confirmed. This local implementation has not been published.
+Confirm the experience figure, address, image rights, final brand mark, enquiry destination, and privacy copy. The preview is marked noindex. Set production metadata, canonical URL, and an approved social sharing image when the destination is confirmed. 
 
 ## GitHub Pages preview
 
-A deployment workflow is included at `.github/workflows/pages.yml`. Create a repository, push these source files to its `main` branch, then select GitHub Actions under Settings > Pages > Source. The workflow exports the site and deploys it to the repository path automatically.
+Preview URL: https://thealexadekunle.github.io/Homdrafting-preview/
 
-To verify the export locally:
+GitHub Pages publishes the committed `docs` directory from `main`. To update the preview, build the export, replace `docs` with the contents of `out`, retain `docs/.nojekyll`, then commit and push.
 
 ```sh
-HOM_STATIC_EXPORT=1 NEXT_PUBLIC_BASE_PATH=/hom-design-preview npm run build
+HOM_STATIC_EXPORT=1 NEXT_PUBLIC_BASE_PATH=/Homdrafting-preview npm run build
 ```
 
-The `out` directory contains the publishable site. Search indexing remains disabled for this preview. The enquiry form requires a separate delivery service before it can receive messages.
+Search indexing remains disabled for this preview. The enquiry form requires a separate delivery service before it can receive messages.
